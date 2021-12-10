@@ -1,0 +1,42 @@
+.add-block {
+    display: flex;
+    justify-content: center;
+}
+.add-form {
+    width: 500px;
+    text-align: center;
+}
+
+.btn{
+    background: transparent;
+    border: none;
+}
+.btn img{
+    width: 30px;
+    }
+
+.search-block{
+    display: flex;
+    justify-content: center;
+}
+
+.search-inp{
+    width: 300px;
+}
+
+.table {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+  }
+  thead{
+    text-align: center;
+  }
+
+.btn-delete, .btn-edit{
+    background: transparent;
+    border: none;
+}
+.btn-delete img, .btn-edit img{
+width: 30px;
+}

@@ -4,10 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./styless.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="add-block">
+    <form class="add-form">
+        <input type="text" class="form-control inp-surname" placeholder="Enter surname">
+        <input type="text" class="form-control inp-name" placeholder="Enter name">
+        <input type="number" class="form-control inp-phone" placeholder="Enter phone number">
+        <div class="input-group inp-weeklyKPI mb-3">
+            <span class="input-group-text">Weekly KPI</span>
+            <input type="number" class="form-control inp-week1" placeholder="1 week">
+            <input type="number" class="form-control inp-week2" placeholder="2 week">
+            <input type="number" class="form-control inp-week3" placeholder="3 week">
+            <input type="number" class="form-control inp-week4" placeholder="4 week">
+        </div>
+        <button type="submit" class="btn"><img src="https://cdn-icons.flaticon.com/png/512/2040/premium/2040520.png?token=exp=1639134068~hmac=75bacad6969602956d21b6eaf15d1899"></button>
+    </form>
+</div>
+
+    <div class="search-block container mt-3">
+        <input placeholder="Live search..." class="form-control search-inp" type="text">
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Surname</th>
+                <th>Name</th>
+                <th>Phone number</th>
+                <th>1 week</th>
+                <th>2 week</th>
+                <th>3 week</th>
+                <th>4 week</th>
+                <th>Monthly KPI</th>
+                <th>#</th>
+                <th>#</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+    
+        </ul>
+      </nav>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="edit-form">
+                <input class="form-control edit-surname" type="text" placeholder="Enter watch surname" aria-label="default input example">
+                <input class="form-control edit-name" type="text" placeholder="Enter name" aria-label="default input example">
+                <input class="form-control edit-phone" type="text" placeholder="Enter phone number" aria-label="default input example">
+                <div class="edit-group inp-weeklyKPI mb-3">
+                    <span class="input-group-text">Weekly KPI</span>
+                    <input type="number" class="form-control edit-week1" placeholder="1 week">
+                    <input type="number" class="form-control edit-week2" placeholder="2 week">
+                    <input type="number" class="form-control edit-week3" placeholder="3 week">
+                    <input type="number" class="form-control edit-week4" placeholder="4 week">
+                </div>
+                <button class="btn btn-primary" type="submit">Save</button>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+            
+            
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./JS/main.js"></script>
 </body>
