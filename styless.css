@@ -12,6 +12,7 @@ body {
 .add-form {
     width: 500px;
     text-align: center;
+    margin: 40px auto;
 }
 
 .btn{
